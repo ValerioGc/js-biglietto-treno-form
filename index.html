@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Form Biglietto treno</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     </head>
     <body>
         <main>
@@ -39,36 +42,38 @@
                 </div>
             </div>
             <!-- Contenitore biglietto -->
-            <h1 class="t_al-c t_up">Il tuo biglietto</h1>
-            <div id="ticket_display">
-                <div id="container_ticket">
-                    <h2 class="t_up t_al-l">Dettaglio Passeggeri</h2>
-                    <div class="d-flex">
-                        <div id="passenger_name-data">
-                            <h3 class="t_up">Nome Passeggero</h3>
-                            <div id="nameP"></div>
+            <section id="ticket_generator">
+                <h1 class="t_al-c t_up">Il tuo biglietto</h1>
+                <div id="ticket_display">
+                    <div id="container_ticket">
+                        <h2 class="t_up t_al-l">Dettaglio Passeggeri</h2>
+                        <div class="d-flex h-100">
+                            <div id="passenger_name-data">
+                                <h3 class="t_up">Nome Passeggero</h3>
+                                <div id="nameP" class="t_up"></div>
+                            </div>
+                            <ul class="d-flex justify_around">
+                                <li>
+                                    <h4>Offerta</h4>
+                                    <p id="offType"></p>
+                                </li>
+                                <li>
+                                    <h4>Carrozza</h4>
+                                    <p id="ride"></p>
+                                </li>
+                                <li>
+                                    <h4>Codice CP</h4>
+                                    <p id="codeCP"></p>
+                                </li>
+                                <li>
+                                    <h4>Costo Biglietto</h4>
+                                    <p id="price-ticket"></p>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="d-flex justify_around">
-                            <li>
-                                <p>Offerta</p>
-                                <p id="offType"></p>
-                            </li>
-                            <li>
-                                <p>Carrozza</p>
-                                <p id="ride"></p>
-                            </li>
-                            <li>
-                                <p>Codice CP</p>
-                                <p id="codeCP"></p>
-                            </li>
-                            <li>
-                                <p>Costo Biglietto</p>
-                                <p id="price-ticket"></p>
-                            </li>
-                        </ul>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
         <script type="text/javascript" src="js/main.js"></script>
     </body>

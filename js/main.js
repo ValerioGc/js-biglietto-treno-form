@@ -26,7 +26,7 @@ submit.addEventListener("click", function () {
     let ticket_over = full_price_ticket - ((full_price_ticket * 40) / 100);
     let ticket_d_over = ticket_over.toFixed(2)
     console.log(`Il prezzo over 65 del biglietto è: ${ticket_d_over}€`);
-    
+
 // Aggiunta Informazioni Biglietto
     document.getElementById('nameP').innerHTML = name_passenger;
     document.getElementById('ride').innerHTML = Math.ceil(Math.random() * 19 + 1);
@@ -44,6 +44,7 @@ submit.addEventListener("click", function () {
         document.getElementById('price-ticket').innerHTML = ticket +'€';
         document.getElementById('offType').innerHTML = 'Biglietto Standard';
     }
+    document.getElementById("ticket_generator").className = "show";
 });
 // Event Listner Bottone Annulla
 refresh.addEventListener('click', function () {
