@@ -11,7 +11,7 @@
         <main>
             <h1 class="t_al-c t_up">calcola il prezzo del tuo biglietto</h1>
             <div id="calc_ticket">
-                <div class="d-flex justify_between" id="user_form">
+                <div class="d-flex justify_around" id="user_form">
                     <!-- Nome Utente -->
                     <span>
                         <label for="nome passeggero">Nome e Cognome</label>
@@ -42,24 +42,24 @@
             <h1 class="t_al-c t_up">Il tuo biglietto</h1>
             <div id="ticket_display">
                 <div id="container_ticket">
-                    <h2 class="t_up">Dettaglio Passeggeri</h2>
+                    <h2 class="t_up t_al-l">Dettaglio Passeggeri</h2>
                     <div class="d-flex">
-                        <div>
+                        <div id="passenger_name-data">
                             <h3 class="t_up">Nome Passeggero</h3>
-                            <div class="nameP"></div>
+                            <div id="nameP"></div>
                         </div>
-                        <ul class="d-flex justify_between">
+                        <ul class="d-flex justify_around">
                             <li>
                                 <p>Offerta</p>
-                                <p></p>
+                                <p id="offType"></p>
                             </li>
                             <li>
                                 <p>Carrozza</p>
-                                <p></p>
+                                <p id="ride"></p>
                             </li>
                             <li>
                                 <p>Codice CP</p>
-                                <p></p>
+                                <p id="codeCP"></p>
                             </li>
                             <li>
                                 <p>Costo Biglietto</p>

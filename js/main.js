@@ -1,7 +1,7 @@
 // Definisco variabili bottoni
 const submit = document.getElementById('generate_ticket')
 const refresh = document.getElementById('refresh_page')
-// Event listner Submit 
+// Event listner Submit
 submit.addEventListener("click", function () {
     document.getElementById("generate_ticket").innerHTML = "Rigenera";
     // Nome Passeggero
@@ -24,18 +24,27 @@ submit.addEventListener("click", function () {
     console.log(`Il prezzo under 18 con del biglietto è: ${ticket_d_under}€`);
     // Biglietto sconto over
     let ticket_over = full_price_ticket - ((full_price_ticket * 40) / 100);
-    let ticket_d_over = ticket_under.toFixed(2)
+    let ticket_d_over = ticket_over.toFixed(2)
     console.log(`Il prezzo over 65 del biglietto è: ${ticket_d_over}€`);
-    if (age <= 18){
-        document.getElementById('price-ticket').innerHTML = `Il prezzo under 18 del biglietto è: ${ticket_d_under}€`;
+    
+// Aggiunta Informazioni Biglietto
+    document.getElementById('nameP').innerHTML = name_passenger;
+    document.getElementById('ride').innerHTML = Math.ceil(Math.random() * 19 + 1);
+    document.getElementById('codeCP').innerHTML = Math.ceil(Math.random() * 10000 + 90000);
+    // Output Prezzo biglietto
+    if (age.value == "Under"){
+        document.getElementById('price-ticket').innerHTML = ticket_d_under + '€';
+        document.getElementById('offType').innerHTML = 'Biglietto Under 18';
     }
-    else if (age >= 65) {
-        document.getElementById('price-ticket').innerHTML = `Il prezzo over 65 del biglietto è: ${ticket_d_over}€`;
+    else if (age.value == 'Over') {
+        document.getElementById('price-ticket').innerHTML = ticket_d_over + '€';
+        document.getElementById('offType').innerHTML = 'Biglietto Over 65';
     }
     else {
-        document.getElementById('price-ticket').innerHTML = `Il prezzo del biglietto è: ${ticket}€`;
+        document.getElementById('price-ticket').innerHTML = ticket +'€';
+        document.getElementById('offType').innerHTML = 'Biglietto Standard';
     }
-}); 
+});
 // Event Listner Bottone Annulla
 refresh.addEventListener('click', function () {
         console.log('Aggiorno Pagina')

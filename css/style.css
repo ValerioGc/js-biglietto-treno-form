@@ -12,11 +12,17 @@
 .t_al-c {
     text-align: center;
 }
+.t_al-l {
+    text-align: left;
+}
 .d-flex {
     display: flex;
 }
 .justify_between {
     justify-content: space-between;
+}
+.justify_around {
+    justify-content: space-around;
 }
 /* 
     Corpo Pagina
@@ -34,10 +40,11 @@ main h1 {
 h1 {
     color: #fff;
 }
+
 #ticket_display,
 #calc_ticket {
     border: 2px solid #000;
-    padding: 30px 70px;
+    padding: 30px 0;
     margin-top: 30px;
     text-align: center;
     border-radius: 15px;
@@ -65,6 +72,21 @@ input {
     width: 250px;
 }
 
+ul {
+    width: 80%;
+}
 ul li {
     list-style-type: none;
+    text-align: left;
+}
+
+#passenger_name-data {
+    border: #000 2px solid;
+    margin: 5px 100px 9px 0px;
+    padding: 30px 15px 142px 20px;
+    width: 30%;
+}
+
+#container_ticket {
+    padding: 30px;
 }
