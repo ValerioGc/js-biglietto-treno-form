@@ -8,22 +8,70 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div>
-            <input type="text" name="nome passeggero" id="nome" placeholder="Inserisci il tuo nome e cognome">
-            <input type="text" name="distanza da percorrere" id="distanza"  placeholder="Distanza da percorrere in Km">
-            <!-- Selettore età -->
-            <select name="eta passeggero" id="eta">
-                <option value="Under">Under 18</option>
-                <option value="Maggiorenne">Maggiorenne</option>
-                <option value="Over">Over 65</option>
-            </select>
-            <!-- Bottoni -->
-            <button type="submit" id="generate_ticket">Genera</button>
-            <button id="refresh_page">Annulla</button>
-        </div>
-        <!-- Contenitore biglietto -->
-        <div></div>
-
+        <main>
+            <h1 class="t_al-c t_up">calcola il prezzo del tuo biglietto</h1>
+            <div id="calc_ticket">
+                <div class="d-flex justify_between" id="user_form">
+                    <!-- Nome Utente -->
+                    <span>
+                        <label for="nome passeggero">Nome e Cognome</label>
+                        <input type="text" name="nome passeggero" id="nome" placeholder="Inserisci il tuo nome e cognome">
+                    </span>
+                    <!-- Distanza da percorrere -->
+                    <span>
+                        <label for="distanza p">KM da Percorrere</label>
+                        <input type="text" name="distanza da percorrere" id="distanza" placeholder="Distanza da percorrere in Km">
+                    </span>
+                    <!-- Selettore età -->
+                    <span>
+                        <label for="fascia eta">Fascia d'età</label>
+                        <select name="eta passeggero" id="eta">
+                            <option value="Under">Under 18</option>
+                            <option value="Maggiorenne">Maggiorenne</option>
+                            <option value="Over">Over 65</option>
+                        </select>
+                    </span>
+                </div>
+                <!-- Bottoni -->
+                <div class="buttons">
+                    <button class="btn" type="submit" id="generate_ticket">Genera</button>
+                    <button class="btn" id="refresh_page">Annulla</button>
+                </div>
+            </div>
+            <!-- Contenitore biglietto -->
+            <h1 class="t_al-c t_up">Il tuo biglietto</h1>
+            <div id="ticket_display">
+                <div id="container_ticket">
+                    <h2 class="t_up">Dettaglio Passeggeri</h2>
+                    <div class="d-flex justify_between">
+                        <div>
+                            <h3 class="t_up">Nome Passeggero</h3>
+                            <div class="nameP"></div>
+                        </div>
+                        <div>
+                            <ul class="d-flex">
+                                <li>
+                                    <p>Offerta</p>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <p>Carrozza</p>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <p>Codice CP</p>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <p>Costo Biglietto</p>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
