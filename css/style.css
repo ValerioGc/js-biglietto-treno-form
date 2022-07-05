@@ -133,6 +133,9 @@ h4 {
 #ticket_generator {
     display: none;
 }
+#container_ticket > h2 {
+    text-shadow: 2px 2px 3px #393939;
+}
 .show {
     display: block!important;
 }
