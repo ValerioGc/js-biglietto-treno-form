@@ -1,6 +1,11 @@
 // Definisco variabili bottoni
 const submit = document.getElementById('generate_ticket')
 const refresh = document.getElementById('refresh_page')
+// Event Listner Bottone Annulla
+refresh.addEventListener('click', function () {
+    console.log('Aggiorno Pagina')
+    location.reload()
+});
 // Event listner Submit
 submit.addEventListener("click", function () {
     console.clear()
@@ -44,6 +49,7 @@ submit.addEventListener("click", function () {
                 document.getElementById('nameP').innerHTML = name_passenger;
                 document.getElementById('ride').innerHTML = Math.ceil(Math.random() * 19 + 1);
                 document.getElementById('codeCP').innerHTML = Math.ceil(Math.random() * 10000 + 90000);
+                document.getElementById('ticketN').innerHTML = 'Numero Biglietto:' + '' + Math.ceil(Math.random() * 1000 + 7000);
                 // Output Prezzo biglietto
                 if (age == "Under"){
                     document.getElementById('price-ticket').innerHTML = ticket_d_under + '€';
@@ -63,9 +69,5 @@ submit.addEventListener("click", function () {
         }
     }
 });
-// Event Listner Bottone Annulla
-refresh.addEventListener('click', function () {
-        console.log('Aggiorno Pagina')
-        location.reload()
-});
+
 

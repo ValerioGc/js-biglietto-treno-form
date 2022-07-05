@@ -133,9 +133,16 @@ h4 {
 #ticket_generator {
     display: none;
 }
-#container_ticket > h2 {
+#container_ticket > h3 {
     text-shadow: 2px 2px 3px #393939;
+    display: inline-block;
+}
+#container_ticket > h2 {
+    text-align:left;
+    padding-right: 60%;
+    display: inline-block;
 }
 .show {
     display: block!important;
 }
+
