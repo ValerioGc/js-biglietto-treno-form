@@ -60,3 +60,11 @@ label[for="distanza p"] {
     border-radius: 10px;
     font-size: 18px;
 }
+
+input {
+    width: 250px;
+}
+
+ul li {
+    list-style-type: none;
+}

@@ -26,7 +26,16 @@ submit.addEventListener("click", function () {
     let ticket_over = full_price_ticket - ((full_price_ticket * 40) / 100);
     let ticket_d_over = ticket_under.toFixed(2)
     console.log(`Il prezzo over 65 del biglietto è: ${ticket_d_over}€`);
-});
+    if (age <= 18){
+        document.getElementById('price-ticket').innerHTML = `Il prezzo under 18 del biglietto è: ${ticket_d_under}€`;
+    }
+    else if (age >= 65) {
+        document.getElementById('price-ticket').innerHTML = `Il prezzo over 65 del biglietto è: ${ticket_d_over}€`;
+    }
+    else {
+        document.getElementById('price-ticket').innerHTML = `Il prezzo del biglietto è: ${ticket}€`;
+    }
+}); 
 // Event Listner Bottone Annulla
 refresh.addEventListener('click', function () {
         console.log('Aggiorno Pagina')
