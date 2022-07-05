@@ -10,6 +10,7 @@ refresh.addEventListener('click', function () {
 
 // Event listner Submit
 submit.addEventListener("click", function () {
+    console.clear ();
     document.getElementById("ticket_generator").className = "d-none";
     document.getElementById("loading-message").className = "d-block";
     document.getElementById("generate_ticket").innerHTML = "Rigenera";
@@ -21,7 +22,6 @@ submit.addEventListener("click", function () {
     }
     else if  (!isNaN(name_passenger)) {
         alert('Inserisci il tuo nome senza simboli o numeri');
-        console.log(name_passenger)
         location.reload();
     }
     else {
@@ -66,17 +66,17 @@ submit.addEventListener("click", function () {
                 document.getElementById('ticketN').innerHTML = 'Numero Biglietto:' + ' ' + Math.ceil(Math.random() * 1000 + 7000);
                 // Output Prezzo biglietto
                 if (age == "Under"){
-                    document.getElementById('price-ticket').innerHTML = ticket_d_under + '€';
+                    ticket = ticket_d_under;
                     document.getElementById('offType').innerHTML = 'Biglietto Under 18';
                 }
                 else if (age == "Over") {
-                    document.getElementById('price-ticket').innerHTML = ticket_d_over + '€';
+                    ticket = ticket_d_over;
                     document.getElementById('offType').innerHTML = 'Biglietto Over 65';
                 }
                 else {
-                    document.getElementById('price-ticket').innerHTML = ticket +'€';
                     document.getElementById('offType').innerHTML = 'Biglietto Standard';
                 }
+                document.getElementById('price-ticket').innerHTML = ticket + '€';
                 setTimeout(showTicket, 2500);
                 // Mostra Biglietto
                 function showTicket() {
