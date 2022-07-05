@@ -8,7 +8,22 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-    
+        <div>
+            <input type="text" name="nome passeggero" id="nome" placeholder="Inserisci il tuo nome e cognome">
+            <input type="text" name="distanza da percorrere" id="distanza"  placeholder="Distanza da percorrere in Km">
+            <!-- Selettore età -->
+            <select name="eta passeggero" id="eta">
+                <option value="Under">Under 18</option>
+                <option value="Maggiorenne">Maggiorenne</option>
+                <option value="Over">Over 65</option>
+            </select>
+            <!-- Bottoni -->
+            <button type="submit" id="generate_ticket">Genera</button>
+            <button id="submit">Annulla</button>
+        </div>
+        <!-- Contenitore biglietto -->
+        <div></div>
+
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
