@@ -17,4 +17,4 @@
 
 ## *_Preview:_*
 
-![Preview 1a](/previews/preview-treno.gif)
+![Preview 1a](/previews/js-train.gif)
