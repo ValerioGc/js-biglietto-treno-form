@@ -47,11 +47,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
-    height: 100vh;
+    min-height: 100vh;
 }
 main {
     width: 80%;
-    margin: auto;
+    margin: 1rem auto;
 }
 /* Titoli e Testi */
 h1 {
