@@ -1,7 +1,7 @@
 
 # **js-biglietto-treno-form**    <img height="25" align="right" src="https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg">
 
-> _Creation of a form that given age and distance will calculate ticket price_
+> _Creation of a form for the purchase of a train ticket that when it receives the data on distance and age calculates the price_
 
 
 <br/>
